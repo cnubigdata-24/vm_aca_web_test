@@ -1,0 +1,7 @@
+# VM으로 SCP 활용 소스코드 복사
+
+# ① Windows cmd 또는 PowerShell
+scp -i "C:\Users\User\Downloads\vmwebserver_key.pem" app.py azureuser@40.82.144.61:/home/azureuser/
+
+# ② 또는 Git Bash 
+scp -i "/c/Users/User/Downloads/vmwebserver_key.pem" ./app.py azureuser@40.82.144.61:/home/azureuser/
