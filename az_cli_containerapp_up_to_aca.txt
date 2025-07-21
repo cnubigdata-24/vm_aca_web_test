@@ -1,3 +1,13 @@
+# Azure CLI 설치 
+https://learn.microsoft.com/ko-kr/cli/azure/install-azure-cli-windows?view=azure-cli-latest&pivots=winget
+
+# Azure CLI 로그인
+az login
+
+# ACA 확장 설치
+az extension add --name containerapp --upgrade
+
+# 소스코드 → ACA에 업로드
 az containerapp up ^
   --name myflaskapp ^
   --resource-group rg20250721111 ^
