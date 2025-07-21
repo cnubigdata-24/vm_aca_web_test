@@ -14,3 +14,24 @@ az containerapp up ^
   --ingress external ^
   --target-port 80 ^
   --source .
+
+# ACA 삭제
+az containerapp delete ^
+  --name myflaskapp ^
+  --resource-group rg20250721111 ^
+  --yes
+
+
+# ACA 확인
+az containerapp show ^
+  --name myflaskapp ^
+  --resource-group rg20250721111
+
+# 동일한 이름으로 ACA 다시 생성
+az containerapp up ^
+  --name myflaskapp ^
+  --resource-group rg20250721111 ^
+  --ingress external ^
+  --target-port 5000 ^
+  --source .
+
