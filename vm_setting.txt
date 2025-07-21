@@ -1,0 +1,17 @@
+# apt 업데이트
+sudo apt update
+
+# 1. venv 설치
+sudo apt install python3-venv -y
+
+# 2. 가상환경 생성
+python3 -m venv myenv
+
+# 3. 가상환경 활성화
+source myenv/bin/activate
+
+# 4. 패키지 설치
+pip install flask
+
+# 5. Flask 웹 실행
+sudo ./myenv/bin/python app.py --host=0.0.0.0 --port=80
