@@ -1,0 +1,6 @@
+az containerapp up ^
+  --name myflaskapp ^
+  --resource-group rg20250721111 ^
+  --ingress external ^
+  --target-port 80 ^
+  --source .
